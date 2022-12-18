@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LighterApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Border Stroke="blue"
+                StrokeThickness="2"
+                Padding="10,1">
+                <Entry x:Name="rEntry"
+                    Placeholder="Enter Value for R"
+                    MaxLength="3"
+                    Style="{StaticResource CommonEntryStyle}" />
+            </Border>
+
+            <Border Stroke="blue"
+                StrokeThickness="2"
+                Padding="10,1">
+                <Entry x:Name="gEntry"
+                    Placeholder="Enter Value for G"
+                    MaxLength="3"
+                    Style="{StaticResource CommonEntryStyle}" />
+            </Border>
+
+            <Border Stroke="blue"
+                StrokeThickness="2"
+                Padding="10,1">
+                <Entry x:Name="bEntry"
+                    Placeholder="Enter Value for B"
+                    MaxLength="3"
+                    Style="{StaticResource CommonEntryStyle}" />
+            </Border>
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Send POST"
+                SemanticProperties.Hint="Send POST!!"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
